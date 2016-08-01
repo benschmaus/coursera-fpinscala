@@ -66,12 +66,9 @@ object Main {
         if (charsToCheck.isEmpty) {
           isBalanced && (pairCounter == 0)
         } else {
-
           if (charsToCheck.head == '(') {
             findParenMatch(charsToCheck.tail, false, pairCounter+1)
-          }
-
-          else if (charsToCheck.head == ')') {
+          } else if (charsToCheck.head == ')') {
             if (pairCounter > 0) {
               findParenMatch(charsToCheck.tail, true, pairCounter-1)
             } else {
@@ -91,14 +88,28 @@ object Main {
    * Exercise 3
    */
     def countChange(money: Int, coins: List[Int]): Int = {
-      def numChangeCombos(numCombinations: Int, coins: List[Int]): Int = {
+      def numChangeCombos(money: Int, coins: List[Int], foundCombinations: Int): Int = {
         if (coins.isEmpty) {
-          numCombinations
+          foundCombinations
         } else {
+          val coin = coins.head
 
-          numChangeCombos(numCombinations, coins.tail)
+          numChangeCombos(money, coins.tail, checkCoins(money, List[Int](coin), foundCombinations))
         }
       }
-      numChangeCombos(0, coins)
+
+      def checkCoins(money: Int, cointsToCheck: List[Int], foundCombinations: Int): Int = {
+        if (cointsToCheck.isEmpty) {
+          foundCombinations
+        } else {
+          val coin = cointsToCheck.head
+          if (coin < money) {
+
+          }
+
+        }
+      }
+
+      numChangeCombos(money, coins, 0)
     }
   }
