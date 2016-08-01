@@ -21,7 +21,7 @@ object Main {
     println(balance("none".toList))
     */
 
-
+  println(">>> Combinations=" + countChange(4, List[Int](1,2)))
 
   }
    /**
@@ -88,28 +88,33 @@ object Main {
    * Exercise 3
    */
     def countChange(money: Int, coins: List[Int]): Int = {
-      def numChangeCombos(money: Int, coins: List[Int], foundCombinations: Int): Int = {
-        if (coins.isEmpty) {
-          foundCombinations
-        } else {
-          val coin = coins.head
+      def findChangeCombos1(money: Int, coins: List[Int], i: Int): Int = {
+        println(f"money=$money%2d, i=$i")
+        if (money < 0)
+          0
+        else if (money == 0)
+          1
+        else if (i == coins.length && money > 0)
+          0
+        else
+          findChangeCombos1(money - coins(i), coins, i) + findChangeCombos1(money, coins, i + 1)
+      }
 
-          numChangeCombos(money, coins.tail, checkCoins(money, List[Int](coin), foundCombinations))
+      def findChangeCombos2(money: Int, coins: List[Int]): Int = {
+        println(f"money=$money%2d, coins=$coins")
+        if ((money < 0) || coins.isEmpty)
+          0
+        else if (money == 0)
+          1
+        else {
+          val newMoney = money - coins.head
+          val newCoins = coins.tail
+          println(s">>> call1=$newMoney, $coins; call2=$money, $newCoins")
+
+          findChangeCombos2(newMoney, coins) + findChangeCombos2(money, newCoins)
         }
       }
 
-      def checkCoins(money: Int, cointsToCheck: List[Int], foundCombinations: Int): Int = {
-        if (cointsToCheck.isEmpty) {
-          foundCombinations
-        } else {
-          val coin = cointsToCheck.head
-          if (coin < money) {
-
-          }
-
-        }
-      }
-
-      numChangeCombos(money, coins, 0)
+      findChangeCombos2(money, coins)
     }
   }
