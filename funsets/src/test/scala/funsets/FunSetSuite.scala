@@ -186,8 +186,16 @@ class FunSetSuite extends FunSuite {
 
       val us3 = union(s1234, union(union(singletonSet(5), singletonSet(7)), singletonSet(FunSets.bound)))
       val containsElemsLessThan5 = exists(us3, elem => elem < 5)
-//      FunSets.toString(us3)
       assert(containsElemsLessThan5, "exists for set " + FunSets.toString(us3) + " should contain elements less than 5")
+    }
+  }
+
+  test("map test") {
+    new TestSets {
+      val ms = map(s1234, elem => elem * 2)
+//      printSet(ms)
+
+      assert(forall(ms, elem => elem % 2 == 0), "input set " + FunSets.toString(s1234) + " should be doubled, got " + FunSets.toString(ms))
     }
   }
 }
