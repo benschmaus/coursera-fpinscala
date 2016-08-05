@@ -11,10 +11,6 @@ object FunSets {
    */
   type Set = Int => Boolean
 
-  class SingletonSet(i: Int) {
-    val member = i
-  }
-
   /**
    * Indicates whether a set contains a given element.
    */
@@ -43,7 +39,9 @@ object FunSets {
    * Returns the difference of the two given sets,
    * the set of all elements of `s` that are not in `t`.
    */
-    def diff(s: Set, t: Set): Set = elem => s(elem) != t(elem)
+    def diff(s: Set, t: Set): Set = elem => {
+      s(elem) && !t(elem)
+    }
   
   /**
    * Returns the subset of `s` for which `p` holds.
@@ -59,20 +57,27 @@ object FunSets {
   /**
    * Returns whether all bounded integers within `s` satisfy `p`.
    */
-    def forall(s: Set, p: Int => Boolean): Boolean = {
-    def iter(a: Int): Boolean = {
-      if (???) ???
-      else if (???) ???
-      else iter(???)
+  def forall(s: Set, p: Int => Boolean): Boolean = {
+//    printSet(s)
+    def iter(a: Int, state: Boolean): Boolean = {
+      if (a > bound) {
+//        println("passed upper bound so returning last checked state of " + state + " and terminating iteration")
+        state
+      }
+      else if (s(a)) {
+//        println("test for " + a + " is " + p(a))
+        iter(a+1, p(a)) && p(a)
+      }
+      else iter(a+1, state)
     }
-    iter(???)
+    iter(-bound, false)
   }
-  
+
   /**
    * Returns whether there exists a bounded integer within `s`
    * that satisfies `p`.
    */
-    def exists(s: Set, p: Int => Boolean): Boolean = ???
+    def exists(s: Set, p: Int => Boolean): Boolean = forall(filter(s, p), p)
   
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
