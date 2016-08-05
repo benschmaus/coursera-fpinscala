@@ -65,7 +65,13 @@ object FunSets {
       }
       else if (s(a)) {
 //        println("test for set member " + a + " is " + p(a))
-        iter(a+1, p(a)) && p(a)
+        val lState = p(a)
+        if (!lState) {
+//          println("test failed for member " + a + " so returning false and exiting")
+          false
+        }
+        else
+          iter(a+1, lState)
       }
       else iter(a+1, state)
     }
