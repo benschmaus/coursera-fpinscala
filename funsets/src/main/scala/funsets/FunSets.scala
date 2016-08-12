@@ -60,6 +60,12 @@ object FunSets {
    * Returns whether all bounded integers within `s` satisfy `p`.
    */
   def forall(s: Set, p: Int => Boolean): Boolean = {
+    def iter2(a: Int): Boolean = {
+      if (a > bound) true
+      else if (s(a) && !p(a)) false
+      else iter2(a + 1)
+    }
+
     def iter(a: Int, state: Boolean): Boolean = {
       if (a > bound) {
 //        println("passed upper bound so returning last checked state of " + state + " and terminating iteration")
@@ -77,7 +83,8 @@ object FunSets {
       }
       else iter(a+1, state)
     }
-    iter(-bound, false)
+    //iter(-bound, false)
+    iter2(-bound)
   }
 
   /**
