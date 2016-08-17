@@ -3,13 +3,13 @@ package funsets
 object Main extends App {
   import FunSets._
 
-  println("running");
+  println(new Bar().x);
 }
 
-class Foo {
-
+abstract class Foo {
+  val x = 1
 }
 
-class Bar {
-
+class Bar extends Foo {
+  override val x = 2
 }

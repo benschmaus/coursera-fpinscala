@@ -12,11 +12,24 @@ class TweetSetSuite extends FunSuite {
     val set1 = new Empty
     val set2 = set1.incl(new Tweet("a", "a body", 20))
     val set3 = set2.incl(new Tweet("b", "b body", 20))
+    val b = new Tweet("b", "b body", 7)
     val c = new Tweet("c", "c body", 7)
     val d = new Tweet("d", "d body", 9)
     val set4c = set3.incl(c)
     val set4d = set3.incl(d)
     val set5 = set4c.incl(d)
+  }
+
+  test("scratch") {
+    new TestSets {
+      /*val s1 = new Empty
+      val s2 = new Empty
+      val s3 = set2.union(s1.incl(b).union(s2.incl(c)))*/
+
+      println("set5 (unfiltered input) = " + set5 + "\n")
+
+      println("\nresult of filter is " + set5.filter(tw => tw.text != "c body"))
+    }
   }
 
   def asSet(tweets: TweetSet): Set[Tweet] = {
