@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f7c232-fb29-40d9-a55e-1fee47ac04dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/objsets/scratch.sc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../funsets/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../funsets/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../funsets/src/main/scala/funsets/Main.scala" afterPath="$PROJECT_DIR$/../funsets/src/main/scala/funsets/Main.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala" afterPath="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/objsets/TweetSetSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/objsets/TweetSetSuite.scala" />
     </list>
     <ignored path="progfun1-objsets.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="TweetSet.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-728">
-              <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
               <folding>
                 <element signature="e#17#32#0" expanded="true" />
               </folding>
@@ -51,18 +48,8 @@
       <file leaf-file-name="TweetSetSuite.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/objsets/TweetSetSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch.sc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/scratch.sc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -104,8 +91,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1731" />
-    <option name="height" value="1095" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -132,6 +119,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,7 +271,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -828,7 +815,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1471452466925" />
+    <option name="lastUpdateTimestamp" value="1471517565164" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -885,47 +872,48 @@
       <workItem from="1471295863036" duration="1463000" />
       <workItem from="1471370117218" duration="694000" />
       <workItem from="1471446857369" duration="605000" />
-      <workItem from="1471452450502" duration="10631000" />
+      <workItem from="1471452450502" duration="12370000" />
+      <workItem from="1471517546249" duration="1203000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 40m 02s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 17m 33s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 40m 24s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 18m 14s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 45m 47s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 18m 26s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 47m 47s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 21m 14s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 48m 13s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 22m 33s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 52m 56s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 23m 09s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 55m 04s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 26m 22s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 58m 57s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 17h 27m 01s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 59m 36s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.18 at 06h 56m 34s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TweetSetSuite_scratch - 2016.08.17 at 15h 59m 54s.xml">
+    <history-entry file="TweetSetSuite_scratch - 2016.08.18 at 09h 25m 49s.xml">
       <configuration name="TweetSetSuite.scratch" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30839000" />
+    <option name="totallyTimeSpent" value="33781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1731" height="1095" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -937,12 +925,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29193342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32602194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32801595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120781526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14592275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1113,42 +1101,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet_Take2.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="197" column="29" selection-start-line="197" selection-start-column="29" selection-end-line="197" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet_Take2.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet_Bak.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/scratch.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet_Bak.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/objsets/TweetSetSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+        <state relative-caret-position="30">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="144" column="5" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
           <folding>
             <element signature="e#17#32#0" expanded="true" />
           </folding>

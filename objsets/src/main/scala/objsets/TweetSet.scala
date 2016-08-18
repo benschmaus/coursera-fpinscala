@@ -4,6 +4,9 @@ import common._
 import TweetReader._
 import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key
 
+// references
+// https://github.com/sczerwinski/coursera-progfun1/wiki/Week-3
+
 /**
   * A class to represent tweets.
   */
@@ -59,6 +62,7 @@ abstract class TweetSet {
   def union(that: TweetSet): TweetSet
 
   def isEmpty: Boolean
+
   /**
     * Returns the tweet from this set which has the greatest retweet count.
     *
@@ -119,11 +123,16 @@ abstract class TweetSet {
     * This method takes a function and applies it to every element in the set.
     */
   def foreach(f: Tweet => Unit): Unit
+
+  override def toString: String
 }
 
 class Empty extends TweetSet {
 
-  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = new Empty
+  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
+    println("acc = " + acc)
+    acc
+  }
 
   def union(that: TweetSet): TweetSet = that
 
@@ -144,13 +153,18 @@ class Empty extends TweetSet {
   def remove(tweet: Tweet): TweetSet = this
 
   def foreach(f: Tweet => Unit): Unit = ()
+
+  override def toString = "."
 }
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
-    val lr = left.filterAcc(p, acc) union right.filterAcc(p, acc)
-    if (p(elem)) lr.incl(elem) else lr
+    println("acc = " + acc)
+    if (p(elem))
+      left.filterAcc(p, right.filterAcc(p, acc.incl(elem)))
+    else
+      left.filterAcc(p, acc) union right.filterAcc(p, acc)
   }
 
   def union(that: TweetSet): TweetSet = right.union(left.union(that.incl(elem)))
@@ -158,8 +172,7 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   def isEmpty = false
 
   def mostRetweeted: Tweet = {
-    val all = right.union(left);
-    val morePopular = all.filter(p => p.retweets > elem.retweets)
+    val morePopular = filter(p => p.retweets > elem.retweets)
     if (morePopular.isEmpty) elem else morePopular.mostRetweeted
   }
 
@@ -190,6 +203,8 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
     left.foreach(f)
     right.foreach(f)
   }
+
+  override def toString = "{" + left + " < " + elem + " > " + right + "}"
 }
 
 trait TweetList {
